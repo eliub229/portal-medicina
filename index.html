@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Médico</title>
 
+<style>
+body{
+    margin:0;
+    font-family: Arial;
+    background:#f4f7fb;
+}
+
+header{
+    background:#0f2d3f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.icon{
+    width:70px;
+    height:70px;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(135deg,#d4af37,#f7e27a);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>🏥 Portal Médico del Grupo</h1>
+<p>Acceso rápido académico</p>
+</header>
+
+<div class="container">
+
+<a href="horario.html">
+<div class="card">
+<div class="icon">🗂️</div>
+<h3>Horario</h3>
+</div>
+</a>
+
+<a href="examenes.html">
+<div class="card">
+<div class="icon">📅</div>
+<h3>Exámenes</h3>
+</div>
+</a>
+
+<a href="malla.html">
+<div class="card">
+<div class="icon">📚</div>
+<h3>Malla</h3>
+</div>
+</a>
+
+<a href="rotaciones.html">
+<div class="card">
+<div class="icon">🏥</div>
+<h3>Rotaciones</h3>
+</div>
+</a>
+
+<a href="docentes.html">
+<div class="card">
+<div class="icon">👨‍⚕️</div>
+<h3>Docentes</h3>
+</div>
+</a>
+
+</div>
+
+</body>
+</html>
