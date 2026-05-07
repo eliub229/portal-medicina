@@ -1,139 +1,38 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portal Medicina</title>
-
-<style>
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#f4f7fb;
-}
-
-/* HEADER GRANDE */
-header{
-    text-align:center;
-    padding:30px 15px;
-    background:#0f2d3f;
-    color:white;
-}
-
-header h1{
-    margin:0;
-    font-size:32px;
-    letter-spacing:1px;
-}
-
-header h2{
-    margin:10px 0 0 0;
-    font-size:22px;
-    font-weight:normal;
-    opacity:0.9;
-}
-
-/* CONTENEDOR ICONOS */
-.container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-    padding:40px 20px;
-}
-
-/* BOTÓN SIN CUADRO */
-a{
-    text-decoration:none;
-}
-
-/* ICONO CIRCULAR SOLO ARO DORADO */
-.icon-box{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-}
-
-/* IMAGEN CIRCULAR */
-.icon-box img{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    border:4px solid #d4af37; /* ARO DORADO */
-    object-fit:cover;
-    transition:0.3s;
-}
-
-/* EFECTO */
-.icon-box img:hover{
-    transform:scale(1.08);
-}
-
-/* TEXTO */
-.icon-box span{
-    margin-top:8px;
-    font-size:14px;
-    color:#0f2d3f;
-    font-weight:bold;
-    text-align:center;
-}
-
-/* RESPONSIVE */
-@media(max-width:600px){
-    header h1{
-        font-size:22px;
-    }
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-    <h1>LICENCIATURA DE MÉDICO GENERAL</h1>
-    <h2>5° "J"</h2>
-</header>
-
 <div class="container">
 
     <a href="horario.html">
         <div class="icon-box">
-            <img src="img/horario.png" alt="Horario">
-            <span>Horario de Clases</span>
+            <img src="img/horario.png">
+            <span>Horario</span>
         </div>
     </a>
 
     <a href="examenes.html">
         <div class="icon-box">
-            <img src="img/examenes.png" alt="Exámenes">
+            <img src="img/examenes.png">
             <span>Exámenes</span>
         </div>
     </a>
 
     <a href="malla.html">
         <div class="icon-box">
-            <img src="img/malla.png" alt="Malla">
+            <img src="img/malla.png">
             <span>Malla Curricular</span>
         </div>
     </a>
 
     <a href="rotaciones.html">
         <div class="icon-box">
-            <img src="img/rotaciones.png" alt="Rotaciones">
+            <img src="img/rotaciones.png">
             <span>Rotaciones</span>
         </div>
     </a>
 
     <a href="docentes.html">
         <div class="icon-box">
-            <img src="img/docentes.png" alt="Docentes">
+            <img src="img/docentes.png">
             <span>Docentes</span>
         </div>
     </a>
 
 </div>
-
-</body>
-</html>
