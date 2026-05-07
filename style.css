@@ -1,3 +1,44 @@
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f7fb;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:30px 15px;
+    background:#0f2d3f;
+    color:white;
+}
+
+header h1{
+    margin:0;
+    font-size:32px;
+}
+
+header h2{
+    margin-top:10px;
+    font-size:22px;
+    font-weight:normal;
+    opacity:0.9;
+}
+
+/* CONTENEDOR (3 COLUMNAS) */
+.container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:40px;
+    padding:50px;
+    justify-items:center;
+}
+
+/* LINK */
+a{
+    text-decoration:none;
+}
+
+/* ICONO */
 .icon-box{
     text-align:center;
     display:flex;
@@ -5,20 +46,30 @@
     align-items:center;
 }
 
-/* CÍRCULO MÁS GRANDE Y CENTRADO */
+/* CÍRCULO GRANDE + ARO DORADO BRILLANTE */
 .icon-box img{
-    width:180px;          /* MÁS GRANDE */
-    height:180px;         /* MÁS GRANDE */
+    width:180px;
+    height:180px;
     border-radius:50%;
-    border:6px solid #d4af37;
-    object-fit:cover;     /* CENTRA LA IMAGEN */
-    object-position:center; /* CENTRADO PERFECTO */
+    object-fit:cover;
+    object-position:center;
+
+    /* ARO DORADO PREMIUM */
+    border:6px solid transparent;
+    background: 
+        linear-gradient(#f4f7fb, #f4f7fb) padding-box,
+        linear-gradient(135deg, #fff3b0, #d4af37, #fff3b0) border-box;
+
+    /* BRILLO */
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+
     transition:0.3s;
 }
 
-/* EFECTO */
+/* HOVER */
 .icon-box img:hover{
     transform:scale(1.08);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.9);
 }
 
 /* TEXTO */
@@ -27,4 +78,28 @@
     font-size:18px;
     font-weight:bold;
     color:#0f2d3f;
+}
+
+/* RESPONSIVE TABLET */
+@media(max-width:768px){
+    .container{
+        grid-template-columns:repeat(2, 1fr);
+        gap:30px;
+    }
+}
+
+/* RESPONSIVE CELULAR */
+@media(max-width:500px){
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .icon-box img{
+        width:140px;
+        height:140px;
+    }
+
+    header h1{
+        font-size:24px;
+    }
 }
