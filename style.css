@@ -1,29 +1,30 @@
-.container{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:40px;
-    padding:50px;
-    justify-items:center;
+.icon-box{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
-/* ICONO MUCHO MÁS GRANDE */
+/* CÍRCULO MÁS GRANDE Y CENTRADO */
 .icon-box img{
-    width:140px;
-    height:140px;
+    width:180px;          /* MÁS GRANDE */
+    height:180px;         /* MÁS GRANDE */
     border-radius:50%;
     border:6px solid #d4af37;
-    object-fit:cover;
+    object-fit:cover;     /* CENTRA LA IMAGEN */
+    object-position:center; /* CENTRADO PERFECTO */
     transition:0.3s;
 }
 
+/* EFECTO */
 .icon-box img:hover{
-    transform:scale(1.1);
+    transform:scale(1.08);
 }
 
+/* TEXTO */
 .icon-box span{
     margin-top:12px;
-    font-size:16px;
+    font-size:18px;
     font-weight:bold;
     color:#0f2d3f;
-    text-align:center;
 }
