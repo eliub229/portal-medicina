@@ -3,57 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portal Médico</title>
+<title>Portal Medicina</title>
 
 <style>
 body{
     margin:0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background:#f4f7fb;
 }
 
+/* HEADER GRANDE */
 header{
+    text-align:center;
+    padding:30px 15px;
     background:#0f2d3f;
     color:white;
-    text-align:center;
-    padding:20px;
 }
 
+header h1{
+    margin:0;
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+header h2{
+    margin:10px 0 0 0;
+    font-size:22px;
+    font-weight:normal;
+    opacity:0.9;
+}
+
+/* CONTENEDOR ICONOS */
 .container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap:20px;
-    padding:30px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:40px 20px;
 }
 
-.card{
-    background:white;
-    border-radius:20px;
-    text-align:center;
-    padding:20px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+/* BOTÓN SIN CUADRO */
+a{
+    text-decoration:none;
+}
+
+/* ICONO CIRCULAR SOLO ARO DORADO */
+.icon-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+/* IMAGEN CIRCULAR */
+.icon-box img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:4px solid #d4af37; /* ARO DORADO */
+    object-fit:cover;
     transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+/* EFECTO */
+.icon-box img:hover{
+    transform:scale(1.08);
 }
 
-.icon{
-    width:70px;
-    height:70px;
-    margin:auto;
-    border-radius:50%;
-    background:linear-gradient(135deg,#d4af37,#f7e27a);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:28px;
+/* TEXTO */
+.icon-box span{
+    margin-top:8px;
+    font-size:14px;
+    color:#0f2d3f;
+    font-weight:bold;
+    text-align:center;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+/* RESPONSIVE */
+@media(max-width:600px){
+    header h1{
+        font-size:22px;
+    }
 }
 </style>
 
@@ -62,46 +92,46 @@ a{
 <body>
 
 <header>
-<h1>🏥 Portal Médico del Grupo</h1>
-<p>Acceso rápido académico</p>
+    <h1>LICENCIATURA DE MÉDICO GENERAL</h1>
+    <h2>5° "J"</h2>
 </header>
 
 <div class="container">
 
-<a href="horario.html">
-<div class="card">
-<div class="icon">🗂️</div>
-<h3>Horario</h3>
-</div>
-</a>
+    <a href="horario.html">
+        <div class="icon-box">
+            <img src="img/horario.png" alt="Horario">
+            <span>Horario de Clases</span>
+        </div>
+    </a>
 
-<a href="examenes.html">
-<div class="card">
-<div class="icon">📅</div>
-<h3>Exámenes</h3>
-</div>
-</a>
+    <a href="examenes.html">
+        <div class="icon-box">
+            <img src="img/examenes.png" alt="Exámenes">
+            <span>Exámenes</span>
+        </div>
+    </a>
 
-<a href="malla.html">
-<div class="card">
-<div class="icon">📚</div>
-<h3>Malla</h3>
-</div>
-</a>
+    <a href="malla.html">
+        <div class="icon-box">
+            <img src="img/malla.png" alt="Malla">
+            <span>Malla Curricular</span>
+        </div>
+    </a>
 
-<a href="rotaciones.html">
-<div class="card">
-<div class="icon">🏥</div>
-<h3>Rotaciones</h3>
-</div>
-</a>
+    <a href="rotaciones.html">
+        <div class="icon-box">
+            <img src="img/rotaciones.png" alt="Rotaciones">
+            <span>Rotaciones</span>
+        </div>
+    </a>
 
-<a href="docentes.html">
-<div class="card">
-<div class="icon">👨‍⚕️</div>
-<h3>Docentes</h3>
-</div>
-</a>
+    <a href="docentes.html">
+        <div class="icon-box">
+            <img src="img/docentes.png" alt="Docentes">
+            <span>Docentes</span>
+        </div>
+    </a>
 
 </div>
 
